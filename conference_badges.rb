@@ -6,7 +6,7 @@ end
 
 def batch_badge_creator(array)
   badge_messages=[]
-  array.each {|message| badge_messages << badge_maker(message)}
+  array.each{|message| badge_messages << badge_maker(message)}
   badge_messages
 end 
 
@@ -17,8 +17,9 @@ def assign_rooms(array)
   room_assignment
 end 
 
+
 def printer(array)
-batch_badge_creator(array).each{|message| puts message}
-assign_rooms(array).each{|message| puts message}
+  batch_badge_creator(array).each{|message| puts message}
+  assign_rooms(array).each{|message| puts message}
 end
 
